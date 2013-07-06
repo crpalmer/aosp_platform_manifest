@@ -4,6 +4,10 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="CM10DNA"
+ 	   fetch="https://github.com" />
+
   <default revision="refs/tags/android-4.2.2_r1.2"
            remote="aosp"
            sync-j="4" />
@@ -342,5 +346,9 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
+
+  <project path="device/htc/dlx" name="CM10DNA/android_device_htc_dlx" revision="cm-10.1-chad" remote="CM10DNA" />
+  <project path="kernel/htc/dlx" name="CM10DNA/android_kernel_htc_dlx" revision="cm-10.1-chad" remote="CM10DNA" />
+  <project path="vendor/htc/dlx" name="CM10DNA/android_vendor_htc_dlx" revision="cm-10.1-chad" remote="CM10DNA" />
 
 </manifest>
